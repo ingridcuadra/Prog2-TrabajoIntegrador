@@ -64,3 +64,37 @@ for i in range(5):
 
 resultado_impares = numeros_impares_juntos(numeros_ingresados)
 print("Los numeros impares que fueron ingresados son: " + resultado_impares)
+
+#Ejercicio N.4
+print("Ejercicio N. 4")
+
+def lista_elementos_en_comun(lista1,lista2):
+    lista_nueva = []
+    for n in lista1:
+        if n in lista2:
+            if n not in lista_nueva:
+                lista_nueva.append(n)
+    print(lista_nueva)
+
+lista_elementos_en_comun(['p','o','t','u'], ['p','w','t','p','u'])
+
+#Ejercicio N.5
+print("Ejercicio N. 5")
+
+def clave_valida(clave):
+    
+    if 6<= len(clave)<=20 and " " not in clave:
+        for c in clave:
+            if c.isdigit():
+                return True
+    return False
+
+print(clave_valida("1sdfwer"))
+
+#Ejercicio N.6
+print("Ejercicio N. 6")
+
+def persona_mayor_de_edad(edad):
+    return edad>=18
+
+print(persona_mayor_de_edad(20))
