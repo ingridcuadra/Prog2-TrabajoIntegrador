@@ -1,3 +1,5 @@
+from impresiones import imprimir_numero_ejercicio, declarar_comida_favorita
+
 #punto numero 1 parte B de las cosngnas 
 def realizar_calculo():
 
@@ -98,3 +100,24 @@ def persona_mayor_de_edad(edad):
     return edad>=18
 
 print(persona_mayor_de_edad(20))
+
+# Ejercicio 8
+imprimir_numero_ejercicio(8)
+print("Importo el procedimiento del ejercicio 7:")
+declarar_comida_favorita("Pablo", "pollo frito")
+declarar_comida_favorita("Pedro", "canelones")
+declarar_comida_favorita("Juan", "pizza")
+
+# Ejercicio 9
+imprimir_numero_ejercicio(9)
+def cuenta_regresiva(entero_positivo):
+    print(entero_positivo)
+
+    if entero_positivo > 0:
+        cuenta_regresiva(entero_positivo - 1)
+
+cuenta_regresiva(5)
+
+# Ejercicio 10
+imprimir_numero_ejercicio(10)
+print(True)
